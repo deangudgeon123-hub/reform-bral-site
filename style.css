@@ -311,9 +311,14 @@ nav {
 .wards-image {
   width: 100%;
   display: block;
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.9rem;
+}
+
+.wards-lead {
+  color: #000000;
+  font-size: 1.05rem;
 }
 
 .cta-box {
