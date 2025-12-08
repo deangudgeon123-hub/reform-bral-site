@@ -319,13 +319,14 @@ nav {
 }
 
 .wards-lead + .wards-image {
-  margin-top: -0.6rem;
+  margin-top: 0;
 }
 
 .wards-lead {
   color: #000000;
   font-size: 1.05rem;
-  margin: 0;
+  margin: 0 0 1rem;
+  text-align: center;
 }
 
 .cta-box {
