@@ -372,18 +372,19 @@ nav {
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid #e5e7eb;
-  background: #f9fafb;
+  border-top: 1px solid #0d8ec7;
+  background: var(--blue);
   padding: 1.25rem 0;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #f9fafb;
 }
 
 .footer-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem;
+  text-align: center;
 }
 
 /* Responsive */
