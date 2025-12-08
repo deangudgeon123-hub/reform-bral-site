@@ -1,5 +1,5 @@
 :root {
-  --blue: #20a4f3;
+  --blue: #06a6ea;
   --dark: #0b1530;
   --light: #f5f7fb;
 }
@@ -115,7 +115,7 @@ nav {
 .hero-text h1 {
   font-size: clamp(1.9rem, 3vw, 2.4rem);
   margin: 0 0 1rem;
-  color: var(--dark);
+  color: var(--blue);
 }
 
 .hero-text p {
@@ -174,6 +174,7 @@ nav {
   font-size: 1.05rem;
   margin-top: 0;
   margin-bottom: 0.75rem;
+  color: var(--blue);
 }
 
 .hero-card ul {
@@ -196,7 +197,7 @@ nav {
 .section h2 {
   margin: 0 0 0.75rem;
   font-size: 1.5rem;
-  color: var(--dark);
+  color: var(--blue);
 }
 
 .section p {
@@ -235,6 +236,7 @@ nav {
 
 .mission-content h2 {
   margin: 0 0 0.35rem;
+  color: var(--blue);
 }
 
 .mission-content h3 {
@@ -268,7 +270,7 @@ nav {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--blue);
 }
 
 .card p {
@@ -328,6 +330,7 @@ nav {
 /* Section headings under image */
 .wards-card h3 {
   margin: 1rem 0 0.2rem;
+  color: var(--blue);
 }
 
 /* Paragraphs under image */
@@ -348,7 +351,7 @@ nav {
 /* MAKE SURE THIS IS DELETED */
  /* .wards-lead + .wards-image { margin-top: 0; } */
 .cta-box {
-  background: #0b1530;
+  background: var(--blue);
   color: #e5e7eb;
   border-radius: 1rem;
   padding: 1.4rem 1.5rem;
