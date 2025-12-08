@@ -413,7 +413,6 @@ nav {
 @media (min-width: 900px) {
   .wards-card {
     padding: 2.4rem 2.5rem 2rem;
-    text-align: center;
   }
 
   .wards-card h2 {
