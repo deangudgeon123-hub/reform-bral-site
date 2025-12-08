@@ -273,3 +273,17 @@ nav a:hover {
     padding-top: 2.5rem;
   }
 }
+.hero-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card .hero-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: block;
+  object-fit: cover;
+}
