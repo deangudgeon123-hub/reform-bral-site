@@ -318,6 +318,10 @@ nav {
   margin: 0;
 }
 
+.wards-lead + .wards-image {
+  margin-top: -0.6rem;
+}
+
 .wards-lead {
   color: #000000;
   font-size: 1.05rem;
