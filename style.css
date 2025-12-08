@@ -46,10 +46,12 @@ a {
 }
 
 .nav-toggle {
-  display: none;
-  background: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
   border: none;
-  padding: 0.35rem;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -65,6 +67,12 @@ a {
   background: var(--blue);
   border-radius: 2px;
   margin: 4px 0;
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
 }
 
 .logo {
@@ -420,15 +428,12 @@ nav {
 @media (max-width: 768px) {
   .nav {
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .nav-toggle {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    order: 3;
-    margin-left: auto;
+    order: 1;
+    margin-right: 0.75rem;
   }
 
   .logo {
