@@ -410,3 +410,20 @@ nav {
   display: block;
   object-fit: cover;
 }
+@media (min-width: 900px) {
+  .wards-card {
+    padding: 2.4rem 2.5rem 2rem;
+    text-align: center;
+  }
+
+  .wards-card h2 {
+    text-align: center;
+  }
+
+  .wards-card .wards-lead {
+    max-width: 660px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
