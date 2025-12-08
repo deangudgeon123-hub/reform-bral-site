@@ -420,12 +420,15 @@ nav {
 @media (max-width: 768px) {
   .nav {
     align-items: center;
+    justify-content: center;
   }
 
   .nav-toggle {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    order: 3;
+    margin-left: auto;
   }
 
   .logo {
