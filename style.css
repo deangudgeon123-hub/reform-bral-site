@@ -283,18 +283,37 @@ nav {
   font-size: 0.95rem;
 }
 
-.wards-image-card {
+
+.wards-card {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.wards-image-card img {
+.wards-card h2 {
+  margin-top: 0;
+}
+
+.wards-card h3 {
+  margin-bottom: 0.35rem;
+  margin-top: 1rem;
+}
+
+.wards-card p {
+  margin: 0 0 0.5rem;
+  color: #4b5563;
+}
+
+.wards-image {
   width: 100%;
   display: block;
   border-radius: 12px;
   object-fit: cover;
+  margin-bottom: 1.25rem;
 }
 
 .cta-box {
