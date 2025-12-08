@@ -32,19 +32,19 @@ const events = [
   {
     title: "Fundraising Evening",
     date: "Spring 2024",
-    image: "/assets/fundrasing-events.webp",
+    image: "assets/fundrasing-events.webp",
     description: "Enjoy an evening with supporters to fund local campaigning and community projects.",
   },
   {
     title: "Branch Committee Meeting",
     date: "Monthly",
-    image: "/assets/reform-committee-meeting-yapton.webp",
+    image: "assets/reform-committee-meeting-yapton.webp",
     description: "Join our committee discussion on priorities, events, and the next steps for our towns.",
   },
   {
     title: "Community Stall",
     date: "High Street Outreach",
-    image: "/assets/stall-5119.webp",
+    image: "assets/stall-5119.webp",
     description: "Chat with the team, pick up materials, and share what matters most to you.",
   },
 ];
@@ -77,7 +77,7 @@ const Home = () => {
       </header>
 
       <section
-        className="relative overflow-hidden bg-[url('/assets/bognor-regis-and-littlehampton-ward.png')] bg-cover bg-center"
+        className="relative overflow-hidden bg-[url('assets/bognor-regis-and-littlehampton-ward.png')] bg-cover bg-center"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/70 to-slate-900/30" />
         <div className="relative mx-auto flex max-w-6xl flex-col gap-8 px-6 py-24 sm:py-28 lg:flex-row lg:items-center lg:py-32">
