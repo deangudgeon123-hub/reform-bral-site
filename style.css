@@ -52,13 +52,19 @@ a {
   text-align: center;
 }
 
-nav a {
+/* Nav links -> Reform blue pills */
+header nav a {
   font-size: 0.9rem;
+  background: var(--blue);
   color: #4b5563;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
-nav a:hover {
-  color: var(--blue);
+header nav a:hover {
+  background: #0095d1;
 }
 
 .header-logo {
