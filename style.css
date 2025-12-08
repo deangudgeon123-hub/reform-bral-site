@@ -283,6 +283,20 @@ nav {
   font-size: 0.95rem;
 }
 
+.wards-image-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.wards-image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .cta-box {
   background: #0b1530;
   color: #e5e7eb;
