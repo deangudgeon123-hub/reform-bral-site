@@ -45,6 +45,28 @@ a {
   flex-wrap: wrap;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.35rem;
+  cursor: pointer;
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.nav-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+  margin: 4px 0;
+}
+
 .logo {
   font-weight: 700;
   font-size: 0.95rem;
@@ -395,16 +417,54 @@ nav {
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    align-items: center;
+  }
 
-@media (max-width: 800px) {
+  .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+    flex: 1;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  }
+
+  .nav-links nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .site-header.nav-open .nav-links {
+    display: block;
+  }
+
+  header nav a {
+    width: 100%;
+    background: transparent;
+    color: var(--blue);
+    padding: 0.85rem 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid #e5e7eb;
+    justify-content: flex-start;
+  }
+
   .hero-inner,
   .split,
   .mission-card {
     grid-template-columns: 1fr;
-  }
-
-  nav {
-    display: none; /* keep it dead simple for now on mobile */
   }
 
   .hero {
@@ -415,6 +475,7 @@ nav {
     min-height: 240px;
   }
 }
+
 .hero-card {
   background: #ffffff;
   border-radius: 16px;
