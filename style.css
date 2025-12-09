@@ -435,7 +435,7 @@ nav {
   .nav-toggle {
     order: 1;
     position: absolute;
-    right: 0.75rem;
+    right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
     margin-right: 0;
