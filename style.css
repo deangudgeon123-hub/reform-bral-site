@@ -45,36 +45,6 @@ a {
   flex-wrap: wrap;
 }
 
-.nav-toggle {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.nav-toggle:focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 2px;
-}
-
-.nav-toggle .bar {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--blue);
-  border-radius: 2px;
-  margin: 4px 0;
-}
-
-@media (min-width: 769px) {
-  .nav-toggle {
-    display: none;
-  }
-}
-
 .logo {
   font-weight: 700;
   font-size: 0.95rem;
@@ -125,6 +95,22 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.85rem;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
 }
 
 /* Hero */
@@ -430,15 +416,6 @@ nav {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-  }
-
-  .nav-toggle {
-    order: 1;
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 0;
   }
 
   .logo {
