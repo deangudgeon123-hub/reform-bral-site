@@ -429,6 +429,7 @@ nav {
   .nav {
     align-items: center;
     justify-content: flex-start;
+    position: relative;
   }
 
   .nav-toggle {
@@ -447,6 +448,10 @@ nav {
     background: #ffffff;
     border-top: 1px solid #e5e7eb;
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
   }
 
   .nav-links nav {
