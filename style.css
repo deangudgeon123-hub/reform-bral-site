@@ -113,9 +113,9 @@ nav {
 
 .nav-toggle {
   position: static;
-  width: 44px;
-  height: 44px;
-  padding: 7px;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
   border: 1px solid #d1d5db;
   border-radius: 12px;
   display: inline-flex;
