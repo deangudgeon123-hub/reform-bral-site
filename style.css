@@ -1,5 +1,5 @@
 :root {
-  --blue: #06a6ea;
+  --blue: #00AEEF;
   --dark: #0b1530;
   --light: #f5f7fb;
 }
@@ -87,7 +87,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background: #1787c8;
+  background: #008EC7;
 }
 
 .header-logo {
@@ -170,7 +170,7 @@ nav {
 /* Hero */
 
 .hero {
-  background: radial-gradient(circle at top left, #e0f4ff, #ffffff);
+  background: radial-gradient(circle at top left, #00AEEF, #ffffff);
   padding: 1.5rem 0 3rem;
 }
 
@@ -223,7 +223,7 @@ nav {
 }
 
 .btn.primary:hover {
-  background: #1787c8;
+  background: #008EC7;
 }
 
 .btn.ghost {
@@ -449,7 +449,7 @@ nav {
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid #0d8ec7;
+  border-top: 1px solid #00AEEF;
   background: var(--blue);
   padding: 1.25rem 0;
   font-size: 0.8rem;
