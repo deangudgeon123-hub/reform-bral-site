@@ -1,5 +1,5 @@
 :root {
-  --blue: #00AEEF;
+  --blue: #1EB1CD;
   --dark: #0b1530;
   --light: #f5f7fb;
 }
@@ -87,7 +87,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background: #008EC7;
+  background: #1EB1CD;
 }
 
 .header-logo {
@@ -223,7 +223,7 @@ nav {
 }
 
 .btn.primary:hover {
-  background: #008EC7;
+  background: #1EB1CD;
 }
 
 .btn.ghost {
@@ -449,7 +449,7 @@ nav {
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid #00AEEF;
+  border-top: 1px solid #1EB1CD;
   background: var(--blue);
   padding: 1.25rem 0;
   font-size: 0.8rem;
