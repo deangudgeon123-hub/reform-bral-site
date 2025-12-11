@@ -117,23 +117,6 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 0.35rem;
-  width: 46px;
-  height: 46px;
-  padding: 0.6rem;
-  border: 1px solid #d1d5db;
-  border-radius: 12px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.nav-toggle .bar {
-  display: block;
-  width: 22px;
-  height: 3px;
-  background: var(--blue);
-  border-radius: 999px;
 }
 
 @media (min-width: 768px) {
