@@ -355,6 +355,46 @@ nav {
   font-size: 0.9rem;
 }
 
+/* Fundraising gallery */
+.fundraising-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+
+.event-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  display: block;
+}
+
+.event-caption {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.event-card-wide {
+  grid-column: 1 / -1;
+  max-width: 720px;
+  justify-self: center;
+}
+
 /* Get involved */
 
 .split {
@@ -490,6 +530,15 @@ nav {
   .split,
   .mission-card {
     grid-template-columns: 1fr;
+  }
+
+  .fundraising-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card-wide {
+    grid-column: auto;
+    justify-self: stretch;
   }
 
   .hero {
