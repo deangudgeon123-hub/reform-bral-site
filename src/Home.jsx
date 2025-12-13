@@ -62,10 +62,7 @@ const Home = () => {
             </div>
           </div>
           <nav className="hidden items-center gap-6 text-sm font-medium text-gray-700 md:flex">
-            <a className="hover:text-[#00AEEF]" href="#about">About</a>
             <a className="hover:text-[#00AEEF]" href="#priorities">Our Priorities</a>
-            <a className="hover:text-[#00AEEF]" href="#events">Events</a>
-            <a className="hover:text-[#00AEEF]" href="#volunteer">Get Involved</a>
           </nav>
           <a
             className="hidden rounded-full bg-[#00AEEF] px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 md:inline-block"
