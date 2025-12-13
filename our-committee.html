@@ -37,14 +37,122 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero committee-hero">
       <div class="container">
         <div class="hero-text">
           <h1>Meet our local committee</h1>
           <p>
-            This page will introduce the BRAL committee members and their roles, showcasing the
-            local leaders who help run our branch.
+            This is the Bognor Regis and Littlehampton branch committee, a friendly group of
+            volunteers who keep our campaign days, meetings, and community outreach running
+            smoothly.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section committee-section">
+      <div class="container">
+        <p class="committee-intro">
+          Say hello to the people who organise events, welcome new supporters, and keep our local
+          branch moving forward.
+        </p>
+
+        <div class="committee-grid">
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/kevin-chair.JPG" alt="Kevin, Branch Chair" />
+            </div>
+            <div class="committee-meta">
+              <h3>Kevin</h3>
+              <p class="committee-role">Branch Chair</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Kevin keeps the team focused, guiding our plans and making sure every voice around the
+                table is heard.
+              </p>
+            </div>
+          </article>
+
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/Angela-vicechair.JPG" alt="Angela, Vice Chair" />
+            </div>
+            <div class="committee-meta">
+              <h3>Angela</h3>
+              <p class="committee-role">Vice Chair</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Angela supports the branch lead, brings people together, and keeps everyone motivated
+                for the next activity.
+              </p>
+            </div>
+          </article>
+
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/Graham-treasure.JPG" alt="Graham, Treasurer" />
+            </div>
+            <div class="committee-meta">
+              <h3>Graham</h3>
+              <p class="committee-role">Treasurer</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Graham looks after the pennies, making sure our fundraising and spending stay on track
+                for the branch.
+              </p>
+            </div>
+          </article>
+
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/Giuliano-campaign.JPG" alt="Giuliano, Campaign Lead" />
+            </div>
+            <div class="committee-meta">
+              <h3>Giuliano</h3>
+              <p class="committee-role">Campaign Lead</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Giuliano plans canvassing routes, coordinates literature drops, and keeps our campaign
+                days lively.
+              </p>
+            </div>
+          </article>
+
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/Caroline-stall.JPG" alt="Caroline, Stall Lead" />
+            </div>
+            <div class="committee-meta">
+              <h3>Caroline</h3>
+              <p class="committee-role">Stall Lead</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Caroline sets up our street stalls, greets passers by, and makes sure visitors leave
+                with the information they need.
+              </p>
+            </div>
+          </article>
+
+          <article class="committee-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="committee-photo">
+              <img src="assets/nick-Co-ordinator.JPG" alt="Nick, Events Coordinator" />
+            </div>
+            <div class="committee-meta">
+              <h3>Nick</h3>
+              <p class="committee-role">Events Coordinator</p>
+            </div>
+            <div class="committee-extra">
+              <p>
+                Nick organises venues, timings, and follow ups so our meetings and get togethers run
+                smoothly for everyone.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -65,6 +173,25 @@
         navToggle.setAttribute('aria-expanded', String(isOpen));
       });
     }
+
+    const committeeCards = document.querySelectorAll('.committee-card');
+
+    const toggleCard = (card) => {
+      const expanded = !card.classList.contains('expanded');
+      card.classList.toggle('expanded', expanded);
+      card.setAttribute('aria-expanded', String(expanded));
+    };
+
+    committeeCards.forEach((card) => {
+      card.addEventListener('click', () => toggleCard(card));
+
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleCard(card);
+        }
+      });
+    });
   </script>
 </body>
 </html>
