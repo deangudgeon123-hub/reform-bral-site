@@ -683,6 +683,10 @@ nav {
 }
 
 /* Committee page */
+.committee-hero {
+  background: #ffffff;
+}
+
 .committee-hero .hero-text {
   max-width: 760px;
 }
@@ -691,11 +695,9 @@ nav {
   padding-top: 2rem;
 }
 
-.committee-intro {
-  margin: 0 0 1.5rem;
-  color: #4b5563;
-  font-size: 1rem;
-  max-width: 780px;
+.committee-cards-section {
+  background: radial-gradient(circle at top left, #e0f4ff, #ffffff);
+  padding: 2.5rem 0;
 }
 
 .committee-grid {
