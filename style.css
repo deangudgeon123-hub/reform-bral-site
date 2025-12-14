@@ -156,10 +156,12 @@ nav {
   header nav a {
     width: auto;
     background: var(--blue);
-    color: #000000;
+    color: #ffffff;
     padding: 0.3rem 0.75rem;
     border-radius: 999px;
     border-bottom: none;
+    font-family: inherit;
+    font-weight: 600;
     justify-content: center;
   }
 
