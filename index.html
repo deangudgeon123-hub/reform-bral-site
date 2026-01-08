@@ -174,7 +174,27 @@
     <section id="contact" class="section section-alt">
       <div class="container">
         <h2>Contact the branch</h2>
-        <p>Email: <strong>chair.bral@reformuk.com</strong></p>
+        <p>Please Email: <strong>chair.bral@reformuk.com</strong></p>
+        <p>Or fill out our form we will be in touch.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-form__grid">
+            <label class="contact-form__field">
+              Full name
+              <input type="text" name="full-name" autocomplete="name" required />
+            </label>
+            <label class="contact-form__field">
+              Email address
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="contact-form__field contact-form__field--full">
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+          </div>
+          <div class="contact-form__actions">
+            <button type="submit" class="btn primary">Send message</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
