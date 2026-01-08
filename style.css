@@ -745,6 +745,11 @@ nav {
   display: block;
 }
 
+.committee-photo img.committee-photo__image--zoom-out {
+  transform: scale(0.88);
+  transform-origin: center;
+}
+
 .committee-meta h3 {
   margin: 0;
   color: var(--blue);
