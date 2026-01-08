@@ -773,6 +773,11 @@ nav {
   margin-top: 0.25rem;
 }
 
+.committee-card--long:hover .committee-extra,
+.committee-card--long.expanded .committee-extra {
+  max-height: 520px;
+}
+
 @media (min-width: 768px) {
   .committee-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
