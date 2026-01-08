@@ -176,26 +176,42 @@
         <h2>Contact the branch</h2>
         <p>Please Email: <strong>chair.bral@reformuk.com</strong></p>
         <p>Or fill out our form we will be in touch.</p>
-        <form class="contact-form" action="#" method="POST" name="contact" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <div class="contact-form__grid">
-            <label class="contact-form__field">
-              Full name
-              <input type="text" name="full-name" autocomplete="name" required />
-            </label>
-            <label class="contact-form__field">
-              Email address
-              <input type="email" name="email" autocomplete="email" required />
-            </label>
-            <label class="contact-form__field contact-form__field--full">
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-          </div>
-          <div class="contact-form__actions">
-            <button type="submit" class="btn primary">Send message</button>
-          </div>
-        </form>
+        <form
+  class="contact-form"
+  name="contact"
+  method="POST"
+  action="/thanks/"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>
+      Don’t fill this out: <input name="bot-field" />
+    </label>
+  </p>
+
+  <div class="contact-form__grid">
+    <label class="contact-form__field">
+      Full name
+      <input type="text" name="full-name" autocomplete="name" required />
+    </label>
+
+    <label class="contact-form__field">
+      Email address
+      <input type="email" name="email" autocomplete="email" required />
+    </label>
+
+    <label class="contact-form__field contact-form__field--full">
+      Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+  </div>
+
+  <div class="contact-form__actions">
+    <button type="submit" class="btn primary">Send message</button>
+  </div>
+</form>
       </div>
     </section>
   </main>
